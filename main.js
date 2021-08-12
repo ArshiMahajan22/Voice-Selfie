@@ -19,12 +19,12 @@ recognition.onresult = function(event){
 }
 
 function speak(){
-    var Talk = window.speechSynthesis;
+    talk = window.speechSynthesis;
     //Text-To-Speech-Converter
     var textbox_text = "Taking Your Selfie in 5 seconds";
     //Computer-Speaks
     var utterThis = new SpeechSynthesisUtterance(textbox_text);
-    Talk.speak(utterThis);
+    talk.speak(utterThis);
     Webcam.attach(camera);
     setTimeout(function (){
         take_Snapshot();
