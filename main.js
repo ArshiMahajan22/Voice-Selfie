@@ -29,7 +29,7 @@ function speak(){
     setTimeout(function (){
         take_Snapshot();
         Save();
-    }, 5000);
+    }, 1000);
 }
 
 //Camera
